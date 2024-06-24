@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinamento</title>
+    <style>
+       input{
+        margin: 2px;
+       }
+    </style>
+</head>
+<body>
+    <h1>multiplicando e dividindo valores</h1>
+   <p><input type="number" name="www" id="www"> primeiro numero</p>
+   <p><input type="number" name="lddd" id="lddd"> segundo numero</p>
+   <input type="number" name="wwe" id="wwe">
+   <input type="button" value="soma" onclick="somar()">
+   <p id="res">soma</p>
+
+   <script>
+    function somar(){
+       var a1 = window.document.getElementById('www') 
+       var a2 = window.document.querySelector('input#lddd')
+       var a3 = window.document.querySelector('input#wwe')
+       var res = window.document.getElementById('res')
+       var num1 = Number(a1.value)
+       var num2 = Number(a2.value)
+       var num3 = Number(a3.value)
+       soma = (num1*num2)/num3
+       res.innerHTML = (`resultado = ${soma}`)
+       
+    }
+
+   </script>
+</body>
+</html>
