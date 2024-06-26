@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seu pais</title>
+    <style>
+        body{
+            background-color: rgb(93, 124, 181);
+        }
+
+        body input{
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        div{
+            background-color: black;
+            width: 100px;
+            color: white;
+            padding: 3px;
+            border-top-left-radius: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>seu pais de horigem</h1>
+     digite qual seu pais: <input type="text" name="bbb" id="ipais">
+    <input type="button" value="pesquisar" onclick="pesquisa()">
+    <div id="sus">pais:</div>
+    <script>
+        function pesquisa(){
+            var a = window.document.getElementById('ipais')
+            var b = window.document.getElementById('sus')
+            var res = String(a.value)
+            b.innerHTML = ('seu pais atual é', + res)
+
+            if ( res == 'brasil'){
+                b.innerHTML = ('vc é brasileiro')
+            }else{ 
+                b.innerHTML = ('vc é extrangeiro')
+
+            }
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
