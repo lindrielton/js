@@ -8,12 +8,21 @@ function verificar(){
     }else{
        var rad = window.document.getElementsByName('igual')
        var idade = ano - nas.value
+       var img = document.createElement('img')
+       img.setAttribute ('id', 'foto')
        if(rad[0].checked){
-        res.innerHTML = `vc é mulher e sua idade é ${idade}`
+        if (idade >= 0 && idade < 10){
+            img.setAttribute('src','imagen/foto-criancaaml.png')
+        }
+        res.style.textAlign = 'center' 
+        res.innerHTML = `identificamos mulher com ${idade} anos`
+        res.appendChild(img)
+        
+        
         
        } else if (rad[1].checked){
         res.style.textAlign = 'center'
-        res.innerHTML = `vc é homen é sua idade é ${idade}`
+        res.innerHTML = `identificamos homem com  ${idade} anos`
         
        }
      
