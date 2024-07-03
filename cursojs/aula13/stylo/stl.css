@@ -1,1 +1,23 @@
 @charset "utf-8";
+
+body{
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'arial';
+}
+
+section div{
+    background-color: cornsilk;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+section div#res{
+    height: 270px;
+}

@@ -13,6 +13,18 @@ function verificar(){
        if(rad[0].checked){
         if (idade >= 0 && idade < 10){
             img.setAttribute('src','imagen/foto-criancaaml.png')
+
+        } else if (idade <= 18){
+
+            img.setAttribute('src', 'imagen/foto-jovemfm.png')
+
+        } else if (idade <= 55){
+
+            img.setAttribute('src', 'imagen/foto-mulher40.png')
+
+        } else if (idade > 55 && idade < 100){
+
+            img.setAttribute('src','imagen/foto-senhora.png')
         }
         res.style.textAlign = 'center' 
         res.innerHTML = `identificamos mulher com ${idade} anos`
@@ -21,8 +33,24 @@ function verificar(){
         
         
        } else if (rad[1].checked){
+        if (idade >= 0 && idade < 10){
+            img.setAttribute('src', 'imagen/foto-criancahm.png')
+
+        } else if( idade < 18){
+
+            img.setAttribute('src','imagen/foto-jovemhm.png')
+
+        } else if (idade < 55){
+
+            img.setAttribute('src','imagen/foto-homen40.png')
+
+        } else if (idade > 55 && idade < 100 ){
+
+            img.setAttribute('src', 'imagen/foto-senhor.png')
+        }       
         res.style.textAlign = 'center'
         res.innerHTML = `identificamos homem com  ${idade} anos`
+        res.appendChild(img)
         
        }
      
