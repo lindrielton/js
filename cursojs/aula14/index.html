@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <style>
+        body{
+            background-color: #4f4fba;
+        }
+        section{
+            background-color: rgb(175, 142, 57);
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            border-radius: 10px;
+        }
+        section p input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>calculadora - imc</h1>
+        </header>
+        <P>
+            <label for="nome">NOME:</label>
+            <input type="text" name="nome" id="nome"> 
+            
+        </P>
+        <P>
+            <label for="altura">ALTURA:</label>
+           <input type="number" name="altura" id="altura">
+        </P>
+
+        <p>
+            <label for="peso">PESO:</label>
+            <input type="number" name="peso" id="peso">
+        </p>
+
+        <p>
+            <input type="button" value="verificar" onclick="calcular()">
+        </p>
+        
+        <div id="res"> 
+            resultado
+        </div>
+        
+    </section>
+    <script src="calculadora/cauculo.js"></script>
+</body>
+</html>
