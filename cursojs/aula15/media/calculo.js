@@ -9,10 +9,12 @@ function somar(){
        
         res.style.color = 'blue'
         res.style.textAlign = 'center'
+        window.document.body.style.background = 'black'
         res.innerHTML = `parabéns  vc está aprovado, sua media final é ${soma}`
     }else {
         res.style.color = 'red'
         res.style.textAlign = 'center'
+        window.document.body.style.background = 'yellow'
         res.innerHTML = `infelismente vc está reprovado sua media fina é ${soma}`
     }
 }
