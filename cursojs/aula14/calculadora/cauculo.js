@@ -6,11 +6,14 @@ function calcular(){
     var n1 = Number.parseFloat(altura.value)
     var p1 = Number.parseFloat(peso.value)
     var imc = p1/(n1*n1)
+    
+
     if(imc > 18 && imc < 24){
+        
         res.style.color = 'white'
         res.style.fontSize = '18px'
         res.innerHTML = (`parabens  vc esta com o peso normal, sua media imc ${imc}`)
-        
+       
         
 
     }else if (imc >= 25 && imc <= 29){
