@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taboada</title>
+    <style>
+        section {
+            margin-top:  30px;
+            text-align: center;
+            
+        }
+        body{
+            background-image: linear-gradient( to right, rgb(167, 167, 46) 20%, rgba(0, 0, 255, 0.757) 80%) 
+        }
+
+        option#res{
+            text-align: justify;
+        }
+        header{
+            text-align: center;
+            font-size: 2em;
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>taboada</header>
+    <section>
+        <div>
+            <p> <input type="number" name="num" id="txtn">
+            <input type="button" value="calcular" onclick="taboada()"></p>
+        </div>
+        <div>
+           <select name="taboada"  size="10">
+            <option id="tab">escolha um numero acima</option>
+           </select>
+        </div>
+        <footer>
+
+        </footer>
+    </section>
+    
+<script src="calculadora/tabu.js"></script>
+</body>
+</html>
