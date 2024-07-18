@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+body{
+    background-color: blue;
+    color: black;
+}
+
+div select{
+    width: 130px;
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+}
