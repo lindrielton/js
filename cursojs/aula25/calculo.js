@@ -7,6 +7,8 @@ function adicionar(n){
         n = num.value
         vet = n*n
         fat = Number(n)+ Number (n)
+        document.body.style.background = 'gray'
+        texto.style.color = `blue`
         texto.innerHTML += `<p> seu numero é ${n.length} </p>`
         texto.innerHTML += `<p>ele multiplicado por ele é ${vet}</p>`
         texto.innerHTML += `<p> ele somado por ele mesmo é ${fat}`   
