@@ -21,3 +21,7 @@ section div{
 section div#res{
     height: 270px;
 }
+
+footer > p{
+    text-align: center;
+}
